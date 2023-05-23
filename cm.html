@@ -88,7 +88,24 @@
     <h1>Coming Soon!</h1>
     <p>Stay tuned for updates</p>
   </div>
-  
+  <div class="countdown">
+    <div class="countdown-item">
+      <span id="days"></span>
+      <div class="countdown-label">Days</div>
+    </div>
+    <div class="countdown-item">
+      <span id="hours"></span>
+      <div class="countdown-label">Hours</div>
+    </div>
+    <div class="countdown-item">
+      <span id="minutes"></span>
+      <div class="countdown-label">Minutes</div>
+    </div>
+    <div class="countdown-item">
+      <span id="seconds"></span>
+      <div class="countdown-label">Seconds</div>
+    </div>
+  </div>
 </div>
  
 
@@ -97,7 +114,7 @@
 
 <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("May 15, 2023 23:59:59").getTime();
+  var countDownDate = new Date("May 30, 2023 23:59:59").getTime();
 
   // Update the countdown every 1 second
   var x = setInterval(function() {
