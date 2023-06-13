@@ -291,3 +291,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+// for contact form code written by tousif
+let namasteBtn = document.querySelector('button');
+namasteBtn.addEventListener('click', inputMsg);
+
+function inputMsg()
+{
+    alert("Thank You For Yor Message We Will Reach You Shorty")
+}
