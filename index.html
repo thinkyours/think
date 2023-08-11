@@ -121,38 +121,6 @@
   </style>
   
 
-<script>
-  document.getElementById("search-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const searchInput = document.querySelector(".form-control");
-    const searchTerm = searchInput.value.trim().toLowerCase();
-
-    // Define your navigation paths and corresponding URLs
-    const navigationPaths = {
-      "home": "index.html",
-      "about": "index.html#about",
-      "team": "index.html#team",
-      "blog": "index.html#recent-posts",
-      "first year": "1year.html",
-      "second year": "2year.html",
-      "third year": "cm.html",
-      "fourth year": "cm.html",
-      "privacy policy": "privacy.html",
-      "contact": "index.html#contact",
-      "Matrices & Differential Equations": "mdc.html",
-      "mdc": "mdc.html",
-      
-      // Add more entries as needed
-    };
-
-    if (navigationPaths.hasOwnProperty(searchTerm)) {
-      window.location.href = navigationPaths[searchTerm];
-    } else {
-      alert("Search term not found.");
-    }
-  });
-</script>
-
 
 <style>
   .search-bar {
@@ -508,6 +476,8 @@ The Think Yours Team</p>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/search.js"></script> -->
+  
 
 </body>
 

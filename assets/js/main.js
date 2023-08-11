@@ -300,3 +300,32 @@ document.addEventListener('DOMContentLoaded', () => {
 // {
 //     alert("Thank You For Yor Message We Will Reach You Shorty")
 // }
+
+document.getElementById("search-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const searchInput = document.querySelector(".form-control");
+  const searchTerm = searchInput.value.trim().toLowerCase();
+
+  // Define your navigation paths and corresponding URLs
+  const navigationPaths = {
+    "home": "index.html",
+    "about": "index.html#about",
+    "team": "index.html#team",
+    "blog": "index.html#recent-posts",
+    "first year": "1year.html",
+    "second year": "2year.html",
+    "third year": "cm.html",
+    "fourth year": "cm.html",
+    "privacy policy": "privacy.html",
+    "contact": "index.html#contact",
+    "mdc": "mdc.html",
+    
+    // Add more entries as needed
+  };
+
+  if (navigationPaths.hasOwnProperty(searchTerm)) {
+    window.location.href = navigationPaths[searchTerm];
+  } else {
+    alert("Search term not found.");
+  }
+});
