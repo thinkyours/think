@@ -71,24 +71,30 @@
   </section><!-- End Top Bar -->
 
   <header id="header" class="header d-flex align-items-center">
-
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl d-flex justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Think Yours</h1>
       </a>
+      
+      <!-- Search bar -->
+      <div class="search-bar">
+        <form class="d-flex" id="search-form">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 300px; background-color: transparent; color: white; border: 1px solid white;">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+      
       <nav id="navbar" class="navbar">
-        <ul>
+        <ul class="d-flex flex-wrap align-items-center">
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#about">About</a></li>
-
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#recent-posts">Blog</a></li>
+          <!-- Other navigation items -->
+  
           <li class="dropdown"><a href="#"><span>Year</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="1year.html">First Year</a></li>
-              
               <li><a href="2year.html">Second Year</a></li>
               <li><a href="cm.html">Third Year</a></li>
               <li><a href="cm.html">Fourth Year</a></li>
@@ -98,12 +104,85 @@
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
-
+  
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
     </div>
-  </header><!-- End Header -->
+  </header>
+
+  <style>
+    /* Other styles... */
+  
+    .search-bar input::placeholder {
+      color: white;
+    }
+  
+    /* Other styles... */
+  </style>
+  
+
+<script>
+  document.getElementById("search-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const searchInput = document.querySelector(".form-control");
+    const searchTerm = searchInput.value.trim().toLowerCase();
+
+    // Define your navigation paths and corresponding URLs
+    const navigationPaths = {
+      "home": "index.html",
+      "about": "index.html#about",
+      "team": "index.html#team",
+      "blog": "index.html#recent-posts",
+      "first year": "1year.html",
+      "second year": "2year.html",
+      "third year": "cm.html",
+      "fourth year": "cm.html",
+      "privacy policy": "privacy.html",
+      "contact": "index.html#contact",
+      "Matrices & Differential Equations": "mdc.html",
+      "mdc": "mdc.html",
+      
+      // Add more entries as needed
+    };
+
+    if (navigationPaths.hasOwnProperty(searchTerm)) {
+      window.location.href = navigationPaths[searchTerm];
+    } else {
+      alert("Search term not found.");
+    }
+  });
+</script>
+
+
+<style>
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  .search-bar form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar .form-control {
+    width: auto;
+  }
+
+  .search-bar .btn {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+  }
+
+  @media (max-width: 767px) {
+    .search-bar {
+      margin: 1rem 0;
+    }
+  }
+</style>
+<!-- End Header -->
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
