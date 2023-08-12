@@ -316,7 +316,7 @@ document.getElementById("search-form").addEventListener("submit", function(event
     "second year": "2year.html",
     "third year": "cm.html",
     "fourth year": "cm.html",
-    "privacy policy": "privacy.html",
+    "Privacy Policy": "privacy.html",
     "contact": "index.html#contact",
     "mdc": "mdc.html",
     
