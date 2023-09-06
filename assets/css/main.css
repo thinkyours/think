@@ -1691,6 +1691,35 @@ section {
   margin: 0 0 20px 0;
 }
 
+/* Default styles for the search bar */
+.search-bar {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.search-bar input[type="search"] {
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for the input */
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.search-bar button[type="submit"] {
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .search-bar input[type="search"] {
+    max-width: none; /* Remove the maximum width on smaller screens */
+  }
+}
+
+
 .recent-posts .title a {
   color: var(--color-default);
   transition: 0.3s;
