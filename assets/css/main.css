@@ -42,6 +42,16 @@ a {
   text-decoration: none;
 }
 
+/* Center-align the contact information */
+.contact .row.justify-content-center {
+  text-align: center;
+}
+
+.contact .info-container {
+  margin: 0 auto; /* Center-align the info container */
+}
+
+
 a:hover {
   color: #00b6a1;
   text-decoration: none;
