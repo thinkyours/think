@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Second Year Home Page</title>
+  <title>Second Year Data Science</title>
   <meta content="We upload Notes of engineering including First Year, Second Year, Third Year, Fourth Year of all branches,
   CS, AIML, AIDS, AI, DS, IT, ENTC, ELEC and also the question papers for in-Semester and end-Semester examination" name="description">
   <meta content="Engineering notes
@@ -71,24 +71,30 @@
   </section><!-- End Top Bar -->
 
   <header id="header" class="header d-flex align-items-center">
-
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl d-flex justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Think Yours<span>.</span></h1>
+        <h1>Think Yours</h1>
       </a>
+      
+      <!-- Search bar -->
+      <div class="search-bar">
+        <form class="d-flex" id="search-form">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 300px; background-color: transparent; color: white; border: 1px solid white;">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+      
       <nav id="navbar" class="navbar">
-        <ul>
+        <ul class="d-flex flex-wrap align-items-center">
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#about">About</a></li>
-
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#recent-posts">Blog</a></li>
+          <!-- Other navigation items -->
+  
           <li class="dropdown"><a href="#"><span>Year</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="1year.html">First Year</a></li>
-              
               <li><a href="2year.html">Second Year</a></li>
               <li><a href="cm.html">Third Year</a></li>
               <li><a href="cm.html">Fourth Year</a></li>
@@ -98,12 +104,52 @@
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
-
+  
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
     </div>
-  </header><!-- End Header -->
+  </header>
+
+  <style>
+    /* Other styles... */
+  
+    .search-bar input::placeholder {
+      color: white;
+    }
+  
+    /* Other styles... */
+  </style>
+  
+
+
+<style>
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  .search-bar form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar .form-control {
+    width: auto;
+  }
+
+  .search-bar .btn {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+  }
+
+  @media (max-width: 767px) {
+    .search-bar {
+      margin: 1rem 0;
+    }
+  }
+</style><!-- End Header -->
   <!-- End Header -->
 
   <main id="main">
@@ -122,8 +168,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Second Year Home Page</h2>
-          <p>Select Branch</p>
+          <h2>Second Year Data Science</h2>
+          <p>All Notes and PYQ's of Sem 3</p>
           
         </div>
 
@@ -131,94 +177,77 @@
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <h3>Computer Science Enginnering</h3>
-              <p></p>
-              <a href="2yearcs.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
+                <a href="#" class="readmore stretched-link">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <h3>Information Technology</h3>
+              <h3>Database Management System</h3>
               <p></p>
-              <a href="" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
+                <a href="#" class="readmore stretched-link">
                 <i class="bi bi-easel"></i>
               </div>
-              <h3>Artificial Intelligence And Machine Learning</h3>
+              <h3>Discrete Mathematics And Graph Theory</h3>
               <p></p>
-              <a href="" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
+                 <a href="#" class="readmore stretched-link">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
-              <h3>Artificial Intelligence</h3>
+              <h3>Data Structure and Algorithm</h3>
               <p></p>
-              <a href="" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+             Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
+                 <a href="#" class="readmore stretched-link">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <h3>Data Science</h3>
+              <h3>Introduction to Data Science</h3>
               <p></p>
-              <a href="2yeards.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+             Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
+                 <a href="#" class="readmore stretched-link">
                 <i class="bi bi-chat-square-text"></i>
               </div>
-              <h3>Electrical Engineering</h3>
+              <h3>Operating System</h3>
               <p></p>
-              <a href="" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+             Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
+
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
+                 <a href="sem3cae1.html" class="readmore stretched-link">
                 <i class="bi bi-chat-square-text"></i>
               </div>
-              <h3>Electronics And Tele-communication Engineering</h3>
-              <p></p>
-              <a href="" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>PYQ's</h3>
+              <p>Previous Year question paper</p>
+             Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
-
-           <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <h3>Mechanical Engineering</h3>
-              <p></p>
-              <a href="" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-           
 
 
         </div>
